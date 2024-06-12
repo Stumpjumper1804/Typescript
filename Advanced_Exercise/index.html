@@ -1,0 +1,144 @@
+<!-- Advanced Exercise 1 
+
+Create a Restaurant Web Page using the below-provided Typescript concepts. Try to implement all of them in an appropriate place in the App: 
+
+● Define for each variable/array the data type 
+● List the array items and make sure that it has a strict data type definition 
+● Use some loop for displaying the data into the Page (forEach, For in, or For-of) 
+● Define some appropriate value as const
+
+It is up to you how the front-end part will look like. It will be nice if you provide a well structured and designed Bootstrap page. Your task is to incorporate all these features using Typescript in a proper and meaningful place in your App. More dynamic data is always welcome. Feel free to add additional functionalities. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+        <div class="container">
+          <a class="navbar-brand" href="#">My Shopping List</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!--hero section-->
+        <div id="hero" class="container">
+          <p>My shopping planner</p>
+        </div>
+        <!-- Bar between hero section and pictures -->
+        <div
+          id="title-bar"
+          class="d-flex justify-content-between align-items-baseline mt-3"
+        >
+          <p class="h5 m-3">Things to buy:</p>
+          <button type="button" id="btn-sort" class="btn btn-primary m-3">
+            Sort by priority
+          </button>
+        </div>
+        <!--pictures container-->
+        <div id="container-main" class="container mx-auto mb-3 main-body">
+          <div
+            id="grid-anchor"
+            class="row row-cols-lg-3 row-cols-md-2 row-cols-1"
+          >
+            <!--here are the shopping items rendered-->
+          </div>
+        </div>
+      </main>
+      <!--footer section-->
+      <footer>
+        <ul id="ul-footer-symbols" class="m-2">
+          <li>
+            <a href="#"
+              ><img src="./images/Facebook2.png" alt="Facebook-Button"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/LinkeIn2.png" alt="LinkeIn-Button"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/github.png" alt="Insta-Button" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/google.png" alt="Insta-Button" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/Insta.jpg" alt="Insta-Button" /></a>
+          </li>
+        </ul>
+
+        <form class="d-flex justify-content-center mt-2">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="email" class="col-form-label"
+                >Sign up for our newsletter:</label
+              >
+            </div>
+            <div class="col-auto">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="name@example.com"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <p class="mt-5">&copy; 2024 Copyright: Albert Karsai</p>
+      </footer>
+    </div>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--my js file-->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
