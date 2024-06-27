@@ -136,7 +136,7 @@ function renderItems(arr) {
     //increase priority level
     priorityButtons.forEach((element, index) => {
         console.log(typeof element);
-        let btn = element;
+        let btn = element; //declares all buttons (button elements) as HTMLElement
         //change background of button on re-rendering
         if (arr[index].importance > 3) {
             btn.classList.add("btn-danger");

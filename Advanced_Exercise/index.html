@@ -1,20 +1,9 @@
-<!-- Advanced Exercise 1 
-
-Create a Restaurant Web Page using the below-provided Typescript concepts. Try to implement all of them in an appropriate place in the App: 
-
-● Define for each variable/array the data type 
-● List the array items and make sure that it has a strict data type definition 
-● Use some loop for displaying the data into the Page (forEach, For in, or For-of) 
-● Define some appropriate value as const
-
-It is up to you how the front-end part will look like. It will be nice if you provide a well structured and designed Bootstrap page. Your task is to incorporate all these features using Typescript in a proper and meaningful place in your App. More dynamic data is always welcome. Feel free to add additional functionalities. -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping List</title>
+    <title>My Shopping Planner</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,13 +11,20 @@ It is up to you how the front-end part will look like. It will be nice if you pr
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <!--navbar-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
         <div class="container">
-          <a class="navbar-brand" href="#">My Shopping List</a>
+          <a class="navbar-brand pb-4" href="#"
+            ><i class="bi bi-cart-check-fill"></i>
+            <span class="fs-4 me-5">My Shopping Planner</span></a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -41,9 +37,11 @@ It is up to you how the front-end part will look like. It will be nice if you pr
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav nav-ul me-auto mb-2 mb-lg-0 fs-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active colored" aria-current="page" href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -58,7 +56,7 @@ It is up to you how the front-end part will look like. It will be nice if you pr
       <main>
         <!--hero section-->
         <div id="hero" class="container">
-          <p>My shopping planner</p>
+          <p>My Shopping Planner</p>
         </div>
         <!-- Bar between hero section and pictures -->
         <div
@@ -82,7 +80,7 @@ It is up to you how the front-end part will look like. It will be nice if you pr
       </main>
       <!--footer section-->
       <footer>
-        <ul id="ul-footer-symbols" class="m-2">
+        <ul id="ul-footer-symbols" class="m-3">
           <li>
             <a href="#"
               ><img src="./images/Facebook2.png" alt="Facebook-Button"
@@ -104,7 +102,7 @@ It is up to you how the front-end part will look like. It will be nice if you pr
           </li>
         </ul>
 
-        <form class="d-flex justify-content-center mt-2">
+        <form class="d-flex justify-content-center flex-wrap mt-2">
           <div class="row g-3 align-items-center">
             <div class="col-auto">
               <label for="email" class="col-form-label"

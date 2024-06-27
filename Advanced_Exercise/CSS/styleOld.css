@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+ }
+
+ /* Swiper */
+ .swiper {
+    width: 90%;
+    height: 300px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+  }
+
+ body {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: "Happy Monkey", system-ui, sans-serif;
+ }
+
+
+ /* Styling of header section and navigation */
+
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+ }
+
+ #header-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+ }
+
+ .header-top, .nav {
+    
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover { 
+        color: firebrick;
+        font-size: 1.2rem;  
+    }
+ }
+ 
+ #nav-top {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+
+    a {
+        text-decoration: none;
+    }
+ }
+ 
+ /* Styling of main section --> food cards */
+
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 10px;
+     width: 90%;
+     margin: 5px auto;
+     padding: 5px;
+
+     img {
+        width: 100%;
+        opacity: 0.8;
+     }
+    
+     img:hover {
+        opacity: 1.0;
+    }
+ }
+ 
+ .grid-item {
+     border: 1px solid gray;
+     box-shadow: 1px 1px 1px 1px gray;
+     position: relative;
+
+     p {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.401);
+        color: white;
+     }
+ }
+ 
+ .title {
+    font-family: "Happy Monkey", system-ui, sans-serif;
+    font-weight:bold;
+    text-align: center;
+     color: black;
+     margin: 10px 0;
+ }
+ 
+ /* STyling of footer section */
+
+ footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    
+    p {
+        text-align: center;
+    }
+ }
+ 
+ #ul-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover { 
+        color: firebrick;
+        font-size: 1.2rem;  
+    }
+    
+ }
+
+ #ul-footer-symbols {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style-type: none;
+    margin: 25px 15px;
+
+    li {
+        margin: 0px 5px
+    }
+ }
+ 
+ /* apply changes according to device size */
+
+    /* for smartphones */
+   @media screen and (max-width: 480px) {
+     .grid { 
+         grid-template-columns: 1fr;
+     }
+   }
+
+   /* for tablets */
+   @media screen and (min-width: 481px) and (max-width: 768px) {
+     .grid { 
+         grid-template-columns: 1fr 1fr;
+     }
+   }
+
+   /* for normal sized screens */
+   @media screen and (min-width:769px) {
+     .grid { 
+         grid-template-columns: repeat(3,1fr);
+     }
+   }
