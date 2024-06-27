@@ -80,12 +80,20 @@ footer {
   justify-content: center;
   list-style-type: none;
   flex-wrap: wrap;
+  padding-left: 0%;
 
   li {
     margin: 0px 5px;
+    border: 1px solid brown;
   }
 }
 
 #email {
-  width: 20vw;
+  width: 200px;
 }
+
+/* @media screen and (max-width: 768px) {
+  .card-outer-div {
+    width: 100%;
+  }
+} */
